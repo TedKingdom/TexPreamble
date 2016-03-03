@@ -1,0 +1,22 @@
+\ProvidesPackage{skrypnykpreamble}[06/11/2015 v1.0 My own macros]
+
+% Resize margins:
+\RequirePackage[top=1.5cm, bottom=2cm, left=3cm, right=2cm]{geometry}
+\RequirePackage{hyperref} % Clickable links and table of contents.
+\RequirePackage{natbib} % Citation package to cite by name (use plainnat
+% bib style).
+\RequirePackage{graphicx} % Graphics.
+\RequirePackage{subcaption} % Get subfigure environment.
+\RequirePackage{amsmath,bm, mathtools} % Maths.
+\RequirePackage{siunitx} % SI unit package.
+\RequirePackage{enumerate} % Labels of the 'enumerate' environment.
+\graphicspath{{img/}} % Add a path to load images.
+\RequirePackage{pgfplots} % Plots.
+\pgfplotsset{width=7cm,compat=1.8} % Set size of all plots and assure 
+% compatibility backwards.
+\RequirePackage{tabularx, booktabs} % Tables, Commands to getter spacing above and 
+% below the various rules in the table (\toprule, \bottomrule, \midrule, and 
+% \cmidrule).
+\newcolumntype{Y}{>{\centering\arraybackslash}X} % Center content of the table, 
+% stretching column(s) with specifier X to make table as wide as specified.
+\newcommand{\fourth}[1]{\textsf{\textbf{#1}}} % 4th order tensors.
