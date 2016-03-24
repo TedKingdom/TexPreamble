@@ -1,4 +1,7 @@
-\ProvidesPackage{skrypnykpreamble}[06/11/2015 v1.0 My own macros]
+\ProvidesPackage{articlepreamble}[06/11/2015 v1.1 Rostyslav Skrypnyk's macros]
+
+% Acknowledgement: some of the commands were adopted from Mikael Öhman's .sty
+% file in https://github.com/Micket/chalmers.git repository.
 
 % Resize margins:
 \RequirePackage[top=1.5cm, bottom=2cm, left=3cm, right=2cm]{geometry}
@@ -7,7 +10,7 @@
 % bib style).
 \RequirePackage{graphicx} % Graphics.
 \RequirePackage{subcaption} % Get subfigure environment.
-\RequirePackage{amsmath,bm, mathtools} % Maths.
+\RequirePackage{amsmath,amssymb,bm,mathtools} % Maths.
 \RequirePackage{siunitx} % SI unit package.
 \RequirePackage{enumerate} % Labels of the 'enumerate' environment.
 \graphicspath{{img/}} % Add a path to load images.
@@ -19,4 +22,5 @@
 % \cmidrule).
 \newcolumntype{Y}{>{\centering\arraybackslash}X} % Center content of the table, 
 % stretching column(s) with specifier X to make table as wide as specified.
-\newcommand{\fourth}[1]{\textsf{\textbf{#1}}} % 4th order tensors.
+\newcommand{\tf}[1]{\boldsymbol{\mathsf{#1}}} % Fourth order tensor. Bold,
+% sans-serif.
